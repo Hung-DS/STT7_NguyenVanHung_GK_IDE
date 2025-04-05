@@ -1,0 +1,27 @@
+[2025-04-05T09:50:44.489+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T09:50:42.815826+00:00 [queued]>
+[2025-04-05T09:50:44.493+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T09:50:42.815826+00:00 [queued]>
+[2025-04-05T09:50:44.493+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2025-04-05T09:50:44.555+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): insert_data_from_csv_to_db_task> on 2025-04-05 09:50:42.815826+00:00
+[2025-04-05T09:50:44.558+0000] {standard_task_runner.py:57} INFO - Started process 492 to run task
+[2025-04-05T09:50:44.560+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_and_insert_data_to_db', 'insert_data_from_csv_to_db_task', 'manual__2025-04-05T09:50:42.815826+00:00', '--job-id', '1263', '--raw', '--subdir', 'DAGS_FOLDER/news_dags.py', '--cfg-path', '/tmp/tmp1eqj__88']
+[2025-04-05T09:50:44.561+0000] {standard_task_runner.py:85} INFO - Job 1263: Subtask insert_data_from_csv_to_db_task
+[2025-04-05T09:50:44.583+0000] {task_command.py:415} INFO - Running <TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T09:50:42.815826+00:00 [running]> on host 39101a2f689c
+[2025-04-05T09:50:44.619+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_and_insert_data_to_db' AIRFLOW_CTX_TASK_ID='insert_data_from_csv_to_db_task' AIRFLOW_CTX_EXECUTION_DATE='2025-04-05T09:50:42.815826+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-05T09:50:42.815826+00:00'
+[2025-04-05T09:50:44.626+0000] {logging_mixin.py:151} INFO - 📄 Dữ liệu sau khi làm sạch:
+[2025-04-05T09:50:44.632+0000] {logging_mixin.py:151} INFO -                                                title  ...          author
+0  thiết bị 'hiểu' đất bằng ai đoạt giải về giải ...  ...  Không xác định
+1  'cha đẻ' internet và các chuyên gia lo con ngư...  ...  Không xác định
+2           cơn sốt 'đóng vỉ chân dung' bằng chatgpt  ...  Không xác định
+3  deepseek vượt chatgpt về lượt truy cập mới hàn...  ...  Không xác định
+4         người dùng chatgpt tăng vọt nhờ ai tạo ảnh  ...  Không xác định
+
+[5 rows x 5 columns]
+[2025-04-05T09:50:44.635+0000] {logging_mixin.py:151} INFO - ✅ Đã chèn: thiết bị 'hiểu' đất bằng ai đoạt giải về giải pháp xanh
+[2025-04-05T09:50:44.636+0000] {logging_mixin.py:151} INFO - ✅ Đã chèn: 'cha đẻ' internet và các chuyên gia lo con người lệ thuộc ai
+[2025-04-05T09:50:44.637+0000] {logging_mixin.py:151} INFO - ✅ Đã chèn: cơn sốt 'đóng vỉ chân dung' bằng chatgpt
+[2025-04-05T09:50:44.637+0000] {logging_mixin.py:151} INFO - ✅ Đã chèn: deepseek vượt chatgpt về lượt truy cập mới hàng tháng
+[2025-04-05T09:50:44.638+0000] {logging_mixin.py:151} INFO - ✅ Đã chèn: người dùng chatgpt tăng vọt nhờ ai tạo ảnh
+[2025-04-05T09:50:44.638+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-04-05T09:50:44.642+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=read_and_insert_data_to_db, task_id=insert_data_from_csv_to_db_task, execution_date=20250405T095042, start_date=20250405T095044, end_date=20250405T095044
+[2025-04-05T09:50:44.660+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-04-05T09:50:44.669+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

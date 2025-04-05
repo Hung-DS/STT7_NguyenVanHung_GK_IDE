@@ -1,0 +1,50 @@
+[2025-04-05T12:16:01.427+0000] {processor.py:157} INFO - Started process (PID=429) to work on /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:16:01.428+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_pipline.py for tasks to queue
+[2025-04-05T12:16:01.429+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:16:01.429+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:16:01.580+0000] {processor.py:839} INFO - DAG(s) dict_keys(['read_and_insert_data_to_db']) retrieved from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:16:01.630+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:16:01.630+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:read_and_insert_data_to_db' as access control is unset.
+[2025-04-05T12:16:01.630+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:16:01.630+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-05T12:16:01.639+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:16:01.639+0000] {dag.py:3696} INFO - Setting next_dagrun for read_and_insert_data_to_db to 2025-04-05T09:00:00+00:00, run_after=2025-04-06T09:00:00+00:00
+[2025-04-05T12:16:01.647+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_pipline.py took 0.223 seconds
+[2025-04-05T12:16:31.881+0000] {processor.py:157} INFO - Started process (PID=435) to work on /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:16:31.882+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_pipline.py for tasks to queue
+[2025-04-05T12:16:31.883+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:16:31.883+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:16:32.048+0000] {processor.py:839} INFO - DAG(s) dict_keys(['read_and_insert_data_to_db']) retrieved from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:16:32.061+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:16:32.061+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-05T12:16:32.071+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:16:32.071+0000] {dag.py:3696} INFO - Setting next_dagrun for read_and_insert_data_to_db to 2025-04-05T09:00:00+00:00, run_after=2025-04-06T09:00:00+00:00
+[2025-04-05T12:16:32.079+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_pipline.py took 0.202 seconds
+[2025-04-05T12:17:02.165+0000] {processor.py:157} INFO - Started process (PID=441) to work on /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:17:02.166+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_pipline.py for tasks to queue
+[2025-04-05T12:17:02.167+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:17:02.166+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:17:02.325+0000] {processor.py:839} INFO - DAG(s) dict_keys(['read_and_insert_data_to_db']) retrieved from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:17:02.337+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:17:02.337+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-05T12:17:02.349+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:17:02.348+0000] {dag.py:3696} INFO - Setting next_dagrun for read_and_insert_data_to_db to 2025-04-05T09:00:00+00:00, run_after=2025-04-06T09:00:00+00:00
+[2025-04-05T12:17:02.356+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_pipline.py took 0.195 seconds
+[2025-04-05T12:17:32.671+0000] {processor.py:157} INFO - Started process (PID=447) to work on /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:17:32.672+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_pipline.py for tasks to queue
+[2025-04-05T12:17:32.673+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:17:32.673+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:17:32.830+0000] {processor.py:839} INFO - DAG(s) dict_keys(['read_and_insert_data_to_db']) retrieved from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:17:32.842+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:17:32.841+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-05T12:17:32.851+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:17:32.851+0000] {dag.py:3696} INFO - Setting next_dagrun for read_and_insert_data_to_db to 2025-04-05T09:00:00+00:00, run_after=2025-04-06T09:00:00+00:00
+[2025-04-05T12:17:32.858+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_pipline.py took 0.191 seconds
+[2025-04-05T12:18:03.010+0000] {processor.py:157} INFO - Started process (PID=453) to work on /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:18:03.011+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_pipline.py for tasks to queue
+[2025-04-05T12:18:03.012+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:18:03.012+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:18:03.179+0000] {processor.py:839} INFO - DAG(s) dict_keys(['read_and_insert_data_to_db']) retrieved from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:18:03.192+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:18:03.192+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-05T12:18:03.203+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:18:03.202+0000] {dag.py:3696} INFO - Setting next_dagrun for read_and_insert_data_to_db to 2025-04-05T09:00:00+00:00, run_after=2025-04-06T09:00:00+00:00
+[2025-04-05T12:18:03.210+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_pipline.py took 0.205 seconds
+[2025-04-05T12:18:33.415+0000] {processor.py:157} INFO - Started process (PID=459) to work on /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:18:33.416+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_pipline.py for tasks to queue
+[2025-04-05T12:18:33.417+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:18:33.417+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:18:33.578+0000] {processor.py:839} INFO - DAG(s) dict_keys(['read_and_insert_data_to_db']) retrieved from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:18:33.594+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:18:33.594+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-05T12:18:33.605+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:18:33.605+0000] {dag.py:3696} INFO - Setting next_dagrun for read_and_insert_data_to_db to 2025-04-05T09:00:00+00:00, run_after=2025-04-06T09:00:00+00:00
+[2025-04-05T12:18:33.613+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_pipline.py took 0.202 seconds
+[2025-04-05T12:19:03.823+0000] {processor.py:157} INFO - Started process (PID=465) to work on /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:19:03.825+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_pipline.py for tasks to queue
+[2025-04-05T12:19:03.826+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:19:03.826+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:19:04.015+0000] {processor.py:839} INFO - DAG(s) dict_keys(['read_and_insert_data_to_db']) retrieved from /opt/airflow/dags/news_pipline.py
+[2025-04-05T12:19:04.029+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:19:04.029+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-04-05T12:19:04.041+0000] {logging_mixin.py:151} INFO - [2025-04-05T12:19:04.041+0000] {dag.py:3696} INFO - Setting next_dagrun for read_and_insert_data_to_db to 2025-04-05T09:00:00+00:00, run_after=2025-04-06T09:00:00+00:00
+[2025-04-05T12:19:04.049+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_pipline.py took 0.232 seconds

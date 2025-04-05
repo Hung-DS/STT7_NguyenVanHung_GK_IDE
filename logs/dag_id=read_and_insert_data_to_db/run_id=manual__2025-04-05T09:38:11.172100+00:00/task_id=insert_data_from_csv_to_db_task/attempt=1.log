@@ -1,0 +1,23 @@
+[2025-04-05T09:38:13.363+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T09:38:11.172100+00:00 [queued]>
+[2025-04-05T09:38:13.367+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T09:38:11.172100+00:00 [queued]>
+[2025-04-05T09:38:13.367+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2025-04-05T09:38:13.430+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): insert_data_from_csv_to_db_task> on 2025-04-05 09:38:11.172100+00:00
+[2025-04-05T09:38:13.433+0000] {standard_task_runner.py:57} INFO - Started process 318 to run task
+[2025-04-05T09:38:13.434+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_and_insert_data_to_db', 'insert_data_from_csv_to_db_task', 'manual__2025-04-05T09:38:11.172100+00:00', '--job-id', '1257', '--raw', '--subdir', 'DAGS_FOLDER/news_dags.py', '--cfg-path', '/tmp/tmpfz010rzy']
+[2025-04-05T09:38:13.436+0000] {standard_task_runner.py:85} INFO - Job 1257: Subtask insert_data_from_csv_to_db_task
+[2025-04-05T09:38:13.457+0000] {task_command.py:415} INFO - Running <TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T09:38:11.172100+00:00 [running]> on host 39101a2f689c
+[2025-04-05T09:38:13.490+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_and_insert_data_to_db' AIRFLOW_CTX_TASK_ID='insert_data_from_csv_to_db_task' AIRFLOW_CTX_EXECUTION_DATE='2025-04-05T09:38:11.172100+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-05T09:38:11.172100+00:00'
+[2025-04-05T09:38:13.491+0000] {logging_mixin.py:151} INFO - Chuẩn bị thêm dữ liệu vào hệ thống
+[2025-04-05T09:38:13.491+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/news_dags.py", line 90, in insert_data_from_csv_to_db
+    raise FileNotFoundError(f"Không tìm thấy file: {file_path}")
+FileNotFoundError: Không tìm thấy file: vnexpress_ai_articles_clean.csv
+[2025-04-05T09:38:13.495+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_and_insert_data_to_db, task_id=insert_data_from_csv_to_db_task, execution_date=20250405T093811, start_date=20250405T093813, end_date=20250405T093813
+[2025-04-05T09:38:13.500+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 1257 for task insert_data_from_csv_to_db_task (Không tìm thấy file: vnexpress_ai_articles_clean.csv; 318)
+[2025-04-05T09:38:13.532+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-04-05T09:38:13.542+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

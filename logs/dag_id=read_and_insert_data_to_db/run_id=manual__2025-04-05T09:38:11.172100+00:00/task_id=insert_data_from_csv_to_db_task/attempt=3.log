@@ -1,0 +1,79 @@
+[2025-04-05T09:44:15.311+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T09:38:11.172100+00:00 [queued]>
+[2025-04-05T09:44:15.315+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T09:38:11.172100+00:00 [queued]>
+[2025-04-05T09:44:15.317+0000] {taskinstance.py:1359} INFO - Starting attempt 3 of 4
+[2025-04-05T09:44:15.386+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): insert_data_from_csv_to_db_task> on 2025-04-05 09:38:11.172100+00:00
+[2025-04-05T09:44:15.389+0000] {standard_task_runner.py:57} INFO - Started process 406 to run task
+[2025-04-05T09:44:15.391+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_and_insert_data_to_db', 'insert_data_from_csv_to_db_task', 'manual__2025-04-05T09:38:11.172100+00:00', '--job-id', '1261', '--raw', '--subdir', 'DAGS_FOLDER/news_dags.py', '--cfg-path', '/tmp/tmp9uwd3jjw']
+[2025-04-05T09:44:15.393+0000] {standard_task_runner.py:85} INFO - Job 1261: Subtask insert_data_from_csv_to_db_task
+[2025-04-05T09:44:15.421+0000] {task_command.py:415} INFO - Running <TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T09:38:11.172100+00:00 [running]> on host 39101a2f689c
+[2025-04-05T09:44:15.459+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_and_insert_data_to_db' AIRFLOW_CTX_TASK_ID='insert_data_from_csv_to_db_task' AIRFLOW_CTX_EXECUTION_DATE='2025-04-05T09:38:11.172100+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-05T09:38:11.172100+00:00'
+[2025-04-05T09:44:15.460+0000] {logging_mixin.py:151} INFO - Chuẩn bị thêm dữ liệu vào hệ thống
+[2025-04-05T09:44:15.467+0000] {logging_mixin.py:151} INFO - Dữ liệu sau khi làm sạch:
+[2025-04-05T09:44:15.473+0000] {logging_mixin.py:151} INFO -                                                title  ...          author
+0  thiết bị 'hiểu' đất bằng ai đoạt giải về giải ...  ...  Không xác định
+1  'cha đẻ' internet và các chuyên gia lo con ngư...  ...  Không xác định
+2           cơn sốt 'đóng vỉ chân dung' bằng chatgpt  ...  Không xác định
+3  deepseek vượt chatgpt về lượt truy cập mới hàn...  ...  Không xác định
+4         người dùng chatgpt tăng vọt nhờ ai tạo ảnh  ...  Không xác định
+
+[5 rows x 5 columns]
+[2025-04-05T09:44:15.476+0000] {logging_mixin.py:151} INFO - Đã tồn tại bản ghi trong hệ thống.
+[2025-04-05T09:44:15.477+0000] {logging_mixin.py:151} INFO - Lỗi khi chèn dòng: Trùng ID, thử lại sau 3 phút.
+[2025-04-05T09:44:15.477+0000] {logging_mixin.py:151} INFO - Thử lại sau 3 phút (lần 1)...
+[2025-04-05T09:47:15.512+0000] {logging_mixin.py:151} INFO - Đã tồn tại bản ghi trong hệ thống.
+[2025-04-05T09:47:15.517+0000] {logging_mixin.py:151} INFO - Lỗi khi chèn dòng: Trùng ID, thử lại sau 3 phút.
+[2025-04-05T09:47:15.518+0000] {logging_mixin.py:151} INFO - Thử lại sau 3 phút (lần 2)...
+[2025-04-05T09:50:15.561+0000] {logging_mixin.py:151} INFO - Đã tồn tại bản ghi trong hệ thống.
+[2025-04-05T09:50:15.566+0000] {logging_mixin.py:151} INFO - Lỗi khi chèn dòng: Trùng ID, thử lại sau 3 phút.
+[2025-04-05T09:50:15.566+0000] {logging_mixin.py:151} INFO - Thử lại sau 3 phút (lần 3)...
+[2025-04-05T09:53:15.594+0000] {logging_mixin.py:151} INFO - Không thể thêm dữ liệu: thiết bị 'hiểu' đất bằng ai đoạt giải về giải pháp xanh vào hệ thống sau 3 lần thử.
+[2025-04-05T09:53:15.605+0000] {logging_mixin.py:151} INFO - Đã tồn tại bản ghi trong hệ thống.
+[2025-04-05T09:53:15.606+0000] {logging_mixin.py:151} INFO - Lỗi khi chèn dòng: Trùng ID, thử lại sau 3 phút.
+[2025-04-05T09:53:15.606+0000] {logging_mixin.py:151} INFO - Thử lại sau 3 phút (lần 1)...
+[2025-04-05T09:56:15.653+0000] {logging_mixin.py:151} INFO - Đã tồn tại bản ghi trong hệ thống.
+[2025-04-05T09:56:15.658+0000] {logging_mixin.py:151} INFO - Lỗi khi chèn dòng: Trùng ID, thử lại sau 3 phút.
+[2025-04-05T09:56:15.658+0000] {logging_mixin.py:151} INFO - Thử lại sau 3 phút (lần 2)...
+[2025-04-05T09:59:15.679+0000] {logging_mixin.py:151} INFO - Đã tồn tại bản ghi trong hệ thống.
+[2025-04-05T09:59:15.683+0000] {logging_mixin.py:151} INFO - Lỗi khi chèn dòng: Trùng ID, thử lại sau 3 phút.
+[2025-04-05T09:59:15.683+0000] {logging_mixin.py:151} INFO - Thử lại sau 3 phút (lần 3)...
+[2025-04-05T10:02:15.694+0000] {logging_mixin.py:151} INFO - Không thể thêm dữ liệu: 'cha đẻ' internet và các chuyên gia lo con người lệ thuộc ai vào hệ thống sau 3 lần thử.
+[2025-04-05T10:02:15.706+0000] {logging_mixin.py:151} INFO - Đã tồn tại bản ghi trong hệ thống.
+[2025-04-05T10:02:15.707+0000] {logging_mixin.py:151} INFO - Lỗi khi chèn dòng: Trùng ID, thử lại sau 3 phút.
+[2025-04-05T10:02:15.708+0000] {logging_mixin.py:151} INFO - Thử lại sau 3 phút (lần 1)...
+[2025-04-05T10:05:15.746+0000] {logging_mixin.py:151} INFO - Đã tồn tại bản ghi trong hệ thống.
+[2025-04-05T10:05:15.750+0000] {logging_mixin.py:151} INFO - Lỗi khi chèn dòng: Trùng ID, thử lại sau 3 phút.
+[2025-04-05T10:05:15.751+0000] {logging_mixin.py:151} INFO - Thử lại sau 3 phút (lần 2)...
+[2025-04-05T10:08:15.838+0000] {logging_mixin.py:151} INFO - Đã tồn tại bản ghi trong hệ thống.
+[2025-04-05T10:08:15.841+0000] {logging_mixin.py:151} INFO - Lỗi khi chèn dòng: Trùng ID, thử lại sau 3 phút.
+[2025-04-05T10:08:15.842+0000] {logging_mixin.py:151} INFO - Thử lại sau 3 phút (lần 3)...
+[2025-04-05T10:11:15.858+0000] {logging_mixin.py:151} INFO - Không thể thêm dữ liệu: cơn sốt 'đóng vỉ chân dung' bằng chatgpt vào hệ thống sau 3 lần thử.
+[2025-04-05T10:11:15.870+0000] {logging_mixin.py:151} INFO - Đã tồn tại bản ghi trong hệ thống.
+[2025-04-05T10:11:15.870+0000] {logging_mixin.py:151} INFO - Lỗi khi chèn dòng: Trùng ID, thử lại sau 3 phút.
+[2025-04-05T10:11:15.871+0000] {logging_mixin.py:151} INFO - Thử lại sau 3 phút (lần 1)...
+[2025-04-05T10:12:25.721+0000] {local_task_job_runner.py:115} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-04-05T10:12:25.744+0000] {process_utils.py:131} INFO - Sending 15 to group 406. PIDs of all processes in the group: [406]
+[2025-04-05T10:12:25.746+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 406
+[2025-04-05T10:12:25.749+0000] {taskinstance.py:1630} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-04-05T10:12:25.761+0000] {logging_mixin.py:151} INFO - Lỗi kết nối hoặc chèn dữ liệu: Task received SIGTERM signal
+[2025-04-05T10:12:25.809+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/news_dags.py", line 114, in insert_data_from_csv_to_db
+    )
+Exception: Trùng ID, thử lại sau 3 phút.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/news_dags.py", line 129, in insert_data_from_csv_to_db
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1632, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2025-04-05T10:12:25.832+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=read_and_insert_data_to_db, task_id=insert_data_from_csv_to_db_task, execution_date=20250405T093811, start_date=20250405T094415, end_date=20250405T101225
+[2025-04-05T10:12:25.864+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 1261 for task insert_data_from_csv_to_db_task (Task received SIGTERM signal; 406)
+[2025-04-05T10:12:25.889+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=406, status='terminated', exitcode=1, started='09:44:15') (406) terminated with exit code 1
+[2025-04-05T10:12:25.890+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 143
+[2025-04-05T10:12:25.910+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
