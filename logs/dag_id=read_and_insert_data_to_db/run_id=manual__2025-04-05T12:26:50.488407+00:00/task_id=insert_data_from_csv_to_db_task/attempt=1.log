@@ -1,0 +1,35 @@
+[2025-04-05T12:26:52.085+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T12:26:50.488407+00:00 [queued]>
+[2025-04-05T12:26:52.089+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T12:26:50.488407+00:00 [queued]>
+[2025-04-05T12:26:52.089+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 4
+[2025-04-05T12:26:52.151+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): insert_data_from_csv_to_db_task> on 2025-04-05 12:26:50.488407+00:00
+[2025-04-05T12:26:52.154+0000] {standard_task_runner.py:57} INFO - Started process 566 to run task
+[2025-04-05T12:26:52.155+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'read_and_insert_data_to_db', 'insert_data_from_csv_to_db_task', 'manual__2025-04-05T12:26:50.488407+00:00', '--job-id', '1286', '--raw', '--subdir', 'DAGS_FOLDER/news_pipline.py', '--cfg-path', '/tmp/tmpvj09jd53']
+[2025-04-05T12:26:52.157+0000] {standard_task_runner.py:85} INFO - Job 1286: Subtask insert_data_from_csv_to_db_task
+[2025-04-05T12:26:52.177+0000] {task_command.py:415} INFO - Running <TaskInstance: read_and_insert_data_to_db.insert_data_from_csv_to_db_task manual__2025-04-05T12:26:50.488407+00:00 [running]> on host 61c85904100a
+[2025-04-05T12:26:52.211+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_and_insert_data_to_db' AIRFLOW_CTX_TASK_ID='insert_data_from_csv_to_db_task' AIRFLOW_CTX_EXECUTION_DATE='2025-04-05T12:26:50.488407+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-05T12:26:50.488407+00:00'
+[2025-04-05T12:26:52.220+0000] {logging_mixin.py:151} INFO - 📄 Dữ liệu sau khi làm sạch:
+[2025-04-05T12:26:52.226+0000] {logging_mixin.py:151} INFO -                                                title  ...          author
+0  thiết bị 'hiểu' đất bằng ai đoạt giải về giải ...  ...  Không xác định
+1  'cha đẻ' internet và các chuyên gia lo con ngư...  ...  Không xác định
+2           cơn sốt 'đóng vỉ chân dung' bằng chatgpt  ...  Không xác định
+3  deepseek vượt chatgpt về lượt truy cập mới hàn...  ...  Không xác định
+4         người dùng chatgpt tăng vọt nhờ ai tạo ảnh  ...  Không xác định
+
+[5 rows x 5 columns]
+[2025-04-05T12:26:52.228+0000] {logging_mixin.py:151} INFO - ⚠️ Bỏ qua do bản ghi đã tồn tại: thiết bị 'hiểu' đất bằng ai đoạt giải về giải pháp xanh (https://vnexpress.net/thiet-bi-hieu-dat-bang-ai-doat-giai-ve-giai-phap-xanh-4870256.html)
+[2025-04-05T12:26:52.228+0000] {logging_mixin.py:151} INFO - ⚠️ Bỏ qua do bản ghi đã tồn tại: 'cha đẻ' internet và các chuyên gia lo con người lệ thuộc ai (https://vnexpress.net/cha-de-internet-va-cac-chuyen-gia-lo-con-nguoi-le-thuoc-ai-4869747.html)
+[2025-04-05T12:26:52.229+0000] {logging_mixin.py:151} INFO - ⚠️ Bỏ qua do bản ghi đã tồn tại: cơn sốt 'đóng vỉ chân dung' bằng chatgpt (https://vnexpress.net/con-sot-dong-vi-chan-dung-bang-chatgpt-4869364.html)
+[2025-04-05T12:26:52.229+0000] {logging_mixin.py:151} INFO - ⚠️ Bỏ qua do bản ghi đã tồn tại: deepseek vượt chatgpt về lượt truy cập mới hàng tháng (https://vnexpress.net/deepseek-vuot-chatgpt-ve-luot-truy-cap-moi-hang-thang-4869278.html)
+[2025-04-05T12:26:52.229+0000] {logging_mixin.py:151} INFO - ⚠️ Bỏ qua do bản ghi đã tồn tại: người dùng chatgpt tăng vọt nhờ ai tạo ảnh (https://vnexpress.net/nguoi-dung-chatgpt-tang-vot-nho-ai-tao-anh-4868976.html)
+[2025-04-05T12:26:52.229+0000] {logging_mixin.py:151} INFO - ⚠️ Bỏ qua do bản ghi đã tồn tại: đối thủ của openai ra ai tạo video 'nhất quán' đầu tiên (https://vnexpress.net/doi-thu-cua-openai-ra-ai-tao-video-nhat-quan-dau-tien-4868915.html)
+[2025-04-05T12:26:52.230+0000] {logging_mixin.py:151} INFO - ❌ Lỗi khi chèn dữ liệu: operator does not exist: text = double precision
+LINE 1: ...id FROM tintuc WHERE title = 'nan' AND source_url = 'NaN'::f...
+                                                             ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+[2025-04-05T12:26:52.230+0000] {logging_mixin.py:151} INFO - ⚠️ Bỏ qua do bản ghi đã tồn tại: intel mở khóa dạy về ai tại việt nam (https://vnexpress.net/intel-mo-khoa-day-ve-ai-tai-viet-nam-4869221.html)
+[2025-04-05T12:26:52.231+0000] {logging_mixin.py:151} INFO - ⚠️ Bỏ qua do bản ghi đã tồn tại: fpt ứng dụng ai agents vào các sự kiện chuyên nghiệp (https://vnexpress.net/fpt-ung-dung-ai-agents-vao-cac-su-kien-chuyen-nghiep-4867025.html)
+[2025-04-05T12:26:52.231+0000] {logging_mixin.py:151} INFO - ⚠️ Bỏ qua do bản ghi đã tồn tại: cách ai hỗ trợ cứu nạn trong động đất myanmar (https://vnexpress.net/cach-ai-ho-tro-cuu-nan-trong-dong-dat-myanmar-4868364.html)
+[2025-04-05T12:26:52.231+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-04-05T12:26:52.236+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=read_and_insert_data_to_db, task_id=insert_data_from_csv_to_db_task, execution_date=20250405T122650, start_date=20250405T122652, end_date=20250405T122652
+[2025-04-05T12:26:52.254+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-04-05T12:26:52.263+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
